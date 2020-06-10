@@ -1,0 +1,32 @@
+class Usuario{
+	private login;
+	private senha;
+
+	public function getlogin(){
+		return $this->login;
+	}
+
+	public function setLogin(login){
+		$this->login = $login;
+	}
+
+	public function getSenha(){
+		return $this->senha;
+	}
+
+	public function setSenha(senha){
+		$this->senha = $senha;
+	}
+
+	function validarSenha(senha){
+
+		if(senha == true){
+			echo "login efetuado";
+		}
+		else{
+			echo "senha incorreta"
+		}
+	}
+
+}
+
